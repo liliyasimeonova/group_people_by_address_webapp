@@ -1,1 +1,25 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group People</title>
+</head>
+
+<body>
+    <h1>Group People</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <label for="file">Upload CSV File:</label>
+        <input type="file" name="file" accept=".csv" required>
+        <br>
+        <label for="data">Or enter data directly:</label>
+        <textarea name="data" rows="5" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Process">
+    </form>
+</body>
+
+</html>
